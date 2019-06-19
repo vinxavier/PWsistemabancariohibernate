@@ -12,15 +12,11 @@ public class CriaContaCorrente {
 		cc.setAtiva(true);
 		cc.setVariacao(0);
 		cc.setId((long) 3);
-		System.out.println(cc.getNumero());
-		System.out.println(cc.getAgencia());
-		System.out.println(cc.getDescricao());
-		System.out.println(cc.isAtiva());
-		System.out.println(cc.getVariacao());
-		System.out.println(cc.getId());
+		cc.imprimeContaCorrente();
 		
 		ContaCorrenteDAO dao = new ContaCorrenteDAO();
 		dao.insere(cc);
 		System.out.println("Gravado!");
+		dao.listAll();
 	}
 }

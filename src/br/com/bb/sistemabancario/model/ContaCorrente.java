@@ -66,4 +66,13 @@ public class ContaCorrente {
 	public void setVariacao(int variacao) {
 		this.variacao = variacao;
 	}
+	
+	public void imprimeContaCorrente() {
+		System.out.println("ID: "+this.getId());
+		System.out.println("NUMERO: "+this.getNumero());
+		System.out.println("AGÊNCIA: " + this.getAgencia());
+		System.out.println("DESCRIÇÃO: "+this.getDescricao());
+		System.out.println("ATIVA: "+this.isAtiva());
+		System.out.println("VARIAÇÃO: "+this.getVariacao());
+	}
 }
